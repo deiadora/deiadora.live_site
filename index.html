@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>deiadora.live — the source speaking</title>
+  <meta name="description" content="This isn't a pep talk. It's a field of remembrance. You are the source." />
+  <meta property="og:title" content="deiadora.live — the source speaking" />
+  <meta property="og:description" content="Based on Quantum Currency: Field Research on Human Coherence — 10 sequences of what it means to activate your quantum being." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deiadora.live" />
+  <meta property="og:image" content="https://deiadora.live/deiadora.live_banner_sm.jpeg" />
+  <link rel="icon" href="/deiadora.live_favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink:        #ebe7dc;
+      --paper:      #0c1516;
+      --card:       #0e171a;
+      --card-lt:    #131f23;
+      --gold:       #ecb02f;
+
+      /* ── spectrum variables ── */
+      --node-0:     #0c1516;
+      --node-1:     #6b2d1a;
+      --node-2:     #9d4418;
+      --node-3:     #c49a3c;
+      --node-4:     #7a9e2a;
+      --node-5:     #2d6a1f;
+      --node-6:     #0f6e56;
+      --node-7:     #1a6b9e;
+      --node-8:     #3c3489;
+      --node-9:     #2d1a4e;
+
+      --accent:     #6b4fa0;  /* source · nonagon · ultraviolet edge */
+      --accent-lt:  #8b6fc0;
+
+      --muted:      #cbc6ba;
+      --line:       rgba(240,237,230,.1);
+      --r:          8px;
+      --serif:      'Exo 2', system-ui, sans-serif;
+      --sans:       'DM Sans', system-ui, sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --ink:        #f4f2ec;
+      --paper:      #010003;
+      --card:       #151515;
+      --card-lt:    #20211e;
+      --gold:       #e6c47d;
+      --accent:     #9b7fd4;
+      --accent-lt:  #b89ee0;
+      --muted:      #b5ad9e;
+      --line:       rgba(240,237,230,.1);
+    }
+
+    [data-theme="dark"] .nav        { background: #010003; }
+    [data-theme="dark"] .card       { background: #151515; }
+    [data-theme="dark"] .talk-card  { background: #151515; }
+    [data-theme="dark"] .cta-card   { background: #151515; }
+
+    [data-theme="light"] {
+      --ink:        #1a1814;
+      --paper:      #f4f2ec;
+      --card:       #fffff2;
+      --card-lt:    #e8e2d6;
+      --muted:      #5a554e;
+      --gold:       #8B5E2A;
+      --accent:     #6b4fa0;
+      --accent-lt:  #8b6fc0;
+      --line:       rgba(26,24,20,.12);
+    }
+
+    [data-theme="light"] .nav       { background: #f4f2ec; }
+    [data-theme="light"] .card      { background: #fffff2; }
+    [data-theme="light"] .talk-card { background: #fffff2; }
+    [data-theme="light"] .cta-card  { background: #fffff2; }
+    [data-theme="light"] .brand     { color: #1a1814; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* ─── nav ─── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .9rem 2rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .navlinks { display: flex; align-items: center; gap: 1.6rem; }
+
+    .navlinks a {
+      font-size: .85rem;
+      font-weight: 400;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: .02em;
+      transition: color .2s;
+    }
+
+    .navlinks a:hover { color: var(--accent); }
+
+    .navlinks .pill {
+      background: var(--accent);
+      color: #ffffff;
+      padding: .42rem 1rem;
+      border-radius: 100px;
+      font-weight: 500;
+      transition: background .2s;
+    }
+
+    .navlinks .pill:hover {
+      background: var(--accent-lt);
+      outline: 1.5px solid var(--gold);
+      outline-offset: 1px;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1.5px solid var(--line);
+      border-radius: 100px;
+      cursor: pointer;
+      padding: .35rem .6rem;
+      font-size: 1rem;
+      line-height: 1;
+      color: var(--muted);
+      transition: border-color .2s, color .2s;
+    }
+
+    .theme-toggle:hover { border-color: var(--gold); color: var(--ink); }
+
+    /* ─── page ─── */
+    .page { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+    /* ─── hero ─── */
+    .hero {
+      padding: 7rem 0 5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: .88rem;
+      font-weight: 300;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      letter-spacing: .06em;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.12;
+      letter-spacing: -.03em;
+      font-weight: 700;
+      color: var(--ink);
+      max-width: 700px;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 580px;
+      line-height: 1.75;
+      margin-bottom: 1.4rem;
+      font-weight: 300;
+    }
+
+    .subhead strong { color: var(--ink); font-weight: 500; }
+
+    .hero-note {
+      font-size: .82rem;
+      color: var(--muted);
+      letter-spacing: .03em;
+      margin-top: 2rem;
+      font-style: italic;
+    }
+
+    .ctaRow { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+
+    /* ─── buttons ─── */
+    .btn {
+      display: inline-flex; align-items: center;
+      padding: .65rem 1.4rem;
+      border-radius: var(--r);
+      font-family: var(--sans);
+      font-size: .88rem;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .2s;
+      border: 1.5px solid transparent;
+    }
+
+    .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn.primary:hover { background: var(--accent-lt); border-color: var(--accent-lt); }
+    .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+    .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ─── sections ─── */
+    section { margin-top: 5rem; }
+
+    .section-label {
+      font-family: var(--serif);
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.6rem;
+    }
+
+    /* ─── cards ─── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 2.2rem 2.4rem;
+    }
+
+    .card h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: .97rem;
+      margin-bottom: .8rem;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ─── talk formats grid ─── */
+    .talk-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    @media (max-width: 560px) { .talk-grid { grid-template-columns: 1fr; } }
+
+    .talk-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1.8rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+
+    .talk-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      opacity: .5;
+      transition: opacity .25s;
+    }
+
+    .talk-card:hover { border-color: var(--accent); }
+    .talk-card:hover::before { opacity: 1; }
+
+    .talk-card .format {
+      font-family: var(--serif);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .talk-card h3 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -.01em;
+    }
+
+    .talk-card p {
+      font-size: .88rem;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    /* ─── field note — the three lines ─── */
+    .field-note {
+      background: var(--card);
+      border: 1px solid var(--accent);
+      border-radius: var(--r);
+      padding: 2.4rem 2.8rem;
+      text-align: center;
+    }
+
+    .field-note p {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.9;
+      letter-spacing: .01em;
+    }
+
+    .field-note p em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 300;
+    }
+
+    /* ─── cta ─── */
+    .cta-card {
+      background: var(--card);
+      border: 1px solid var(--accent);
+      border-radius: var(--r);
+      padding: 2.2rem 2.4rem;
+    }
+
+    .cta-card h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin-bottom: .8rem;
+      color: var(--ink);
+    }
+
+    .cta-card p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: .97rem;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ─── footer ─── */
+    .footer {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: .6rem;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+
+    .footer a { color: var(--gold); text-decoration: none; }
+    .footer a:hover { opacity: .75; }
+
+    .muted { color: var(--muted); }
+
+    /* ─── animations ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero .kicker    { animation: fadeUp .5s ease both; animation-delay: .05s; }
+    .hero h1         { animation: fadeUp .5s ease both; animation-delay: .12s; }
+    .hero .subhead   { animation: fadeUp .5s ease both; animation-delay: .2s; }
+    .hero .ctaRow    { animation: fadeUp .5s ease both; animation-delay: .28s; }
+    .hero .hero-note { animation: fadeUp .5s ease both; animation-delay: .34s; }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/">deiadora<span>.live</span></a>
+    <nav class="navlinks">
+      <a href="#about">about</a>
+      <a href="#talk">the talk</a>
+      <a href="#formats">formats</a>
+      <a href="#book" class="pill">book the speaker</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- ─── hero ─── -->
+    <section class="hero">
+      <p class="kicker">deiadora.live · speaking · keynotes · lunch-and-learns · podcasts · motivational talks</p>
+      <h1>This isn't a pep talk. <em>It's a field of remembrance.</em></h1>
+      <p class="subhead">
+        From high school and collegiate speech and debate to the present moment,
+        Deiadora has been using her voice to transform audiences with intuitive insight.
+        <strong>You are the source.</strong> The talk just helps you remember.
+      </p>
+      <p class="subhead">
+        Based on the upcoming release of
+        <em>Quantum Currency: A Field Report on Human Coherence</em> —
+        ten sequences of what it means to activate your remembrance.
+        Adapts to any audience, any format, any room.
+      </p>
+      <div class="ctaRow">
+        <a class="btn primary" href="#book">book the speaker</a>
+        <a class="btn ghost" href="#talk">the talk</a>
+      </div>
+      <p class="hero-note">available for conferences · teams · podcasts · any room that's ready</p>
+    </section>
+
+    <!-- ─── the three lines ─── -->
+    <section>
+      <div class="field-note">
+        <p>This isn't a pep talk.</p>
+        <p><em>It's a field of remembrance.</em></p>
+        <p>You are the source.</p>
+      </div>
+    </section>
+
+    <!-- ─── about ─── -->
+    <section id="about">
+      <p class="section-label">the speaker</p>
+      <div class="card">
+        <h2>Deiadora has been transforming audiences with her voice her entire life.</h2>
+        <p>
+          From high school and collegiate speech and debate to decades of
+          professional speaking, facilitation, and teaching — Deiadora brings
+          the full bandwidth of a natural technologist, researcher, writer,
+          and musician to every room she enters. Her talks are not presentations.
+          They are transmissions: precise, research-grounded, and calibrated
+          to meet the audience exactly where they are.
+        </p>
+        <p>
+          Her work has reached professionals across the tech industry and beyond —
+          from Fortune 500 teams navigating AI transformation to individuals
+          seeking a more coherent relationship with their own intelligence.
+          The framework she speaks from is the same one she has been researching
+          and refining for thirteen years: the practical architecture of a coherent
+          life that actually sustains you, the planet, and the future of tech.
+        </p>
+        <p>
+          Her upcoming book, <em>Quantum Currency: Field Research on Human Coherence</em>,
+          is the formal statement of that research. The talk is where it becomes
+          a lived experience in the room. Every format — keynote, lunch-and-learn,
+          motivational talk, podcast — is an adaptation of the same signal,
+          tuned to the frequency of the audience receiving it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── the talk ─── -->
+    <section id="talk">
+      <p class="section-label">the talk · quantum currency</p>
+      <div class="card">
+        <h2>Activate your remembrance.</h2>
+        <p>
+          Based on <em>Quantum Currency: A Field Report on Human Coherence</em>,
+          this talk walks audiences through the ten sequences of what it means
+          to be a coherent human system — grounded in quantum field theory,
+          neuroscience, and geometric systems thinking, and delivered in the
+          plain language of someone who has been living the research.
+        </p>
+        <p>
+          The talk is not theoretical. It is a field event. By the time it ends,
+          the room has shifted. Audiences leave not with a framework to install
+          but with a remembrance of what they already carry — and the practical
+          language to act from it.
+        </p>
+        <p>
+          Adapts to any context: a conference keynote, a team lunch-and-learn,
+          a motivational talk, a podcast conversation. The signal is the same.
+          The transmission finds its receivers wherever they are.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── formats ─── -->
+    <section id="formats">
+      <p class="section-label">formats</p>
+      <div class="talk-grid">
+
+        <div class="talk-card">
+          <p class="format">keynote</p>
+          <h3>Conference or event keynote</h3>
+          <p>A full transmission for a large audience — the complete arc of the quantum currency framework, calibrated to the event's theme and the room's frequency.</p>
+        </div>
+
+        <div class="talk-card">
+          <p class="format">team · lunch-and-learn</p>
+          <h3>Lunch-and-learn or team session</h3>
+          <p>An intimate, interactive session for a team — the fractal framework applied directly to how the team works, collaborates, and navigates complexity together.</p>
+        </div>
+
+        <div class="talk-card">
+          <p class="format">motivational</p>
+          <h3>Motivational talk</h3>
+          <p>Not a pep talk — a field of remembrance. For audiences at an inflection point: the talk that changes how the room thinks about what's possible and who they already are.</p>
+        </div>
+
+        <div class="talk-card">
+          <p class="format">podcast · interview</p>
+          <h3>Podcast or media appearance</h3>
+          <p>A conversation that goes somewhere. Deiadora brings thirteen years of field research, a book in progress, and a natural technologist's perspective to any microphone.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── book ─── -->
+    <section id="book">
+      <div class="cta-card">
+        <h2>Book the speaker</h2>
+        <p>
+          For speaking enquiries — conferences, events, team sessions,
+          podcast appearances, or any room that's ready —
+          email directly. Every engagement is a conversation first.
+        </p>
+        <a class="btn primary" href="mailto:hello@deiadora.live?subject=speaking enquiry · deiadora.live">email deiadora →</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>deiadora.live · source · nonagon</p>
+      <p class="muted">© <span id="year"></span> · part of the <a href="https://deiadora.com">deiadora ecosystem</a> 🌿</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("themeToggle");
+    const saved = localStorage.getItem("theme-deiadora-live") || "dark";
+    document.documentElement.setAttribute("data-theme", saved);
+    toggle.textContent = saved === "dark" ? "🌙" : "☀️";
+
+    toggle.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme-deiadora-live", next);
+      toggle.textContent = next === "dark" ? "🌙" : "☀️";
+    });
+  </script>
+</body>
+</html>
