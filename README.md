@@ -97,20 +97,21 @@ Deployed on **Cloudflare Pages**.
  
 - Default theme: dark
 - Theme preference stored in `localStorage` key: `theme-deiadora-live`
-- Contact: hello@deiadora.com
+- Contact: hello@deiadora.live
  
 ---
  
 ### part of the deiadora ecosystem
  
-→ [deiadora.com](https://deiadora.com) · the field
-→ [deiadorebel.life](https://deiadorebel.life) · coherence · torus
-→ [drblexchange.com](https://drblexchange.com) · recognition · vesica piscis
-→ [quantummagic.ai](https://quantummagic.ai) · discernment · tetrahedron
-→ [iamdeiadora.com](https://iamdeiadora.com) · wave · the cube
-→ [deiadorebel.com](https://deiadorebel.com) · transmission · dodecahedron
-→ [techtuition.ai](https://techtuition.ai) · expression · egg of life
-→ [thequantumceo.com](https://thequantumceo.com) · structure · octagon
-→ [deiadora.live](https://deiadora.live) · source · nonagon
+→ [deiadora.com](https://deiadora.com) · 0 · the field · zero point
+→ [deiadorebel.life](https://deiadorebel.life) · 1 · coherence · torus
+→ [drblexchange.com](https://drblexchange.com) · 2 ·recognition · vesica piscis
+→ [quantummagic.ai](https://quantummagic.ai) · 3 · discernment · tetrahedron
+→ [iamdeiadora.com](https://iamdeiadora.com) · 4 · wave · the cube
+→ [rebelevolve.com](https://rebelevolve.com) · 5 · direction · second cube
+→ [deiadorebel.com](https://deiadorebel.com) · 6 · transmission · dodecahedron
+→ [techtuition.ai](https://techtuition.ai) · 7 · expression · egg of life
+→ [thequantumceo.com](https://thequantumceo.com) · 8 · structure · octagon
+→ [deiadora.live](https://deiadora.live) · 9 · source · nonagon
  
 *this isn't a pep talk · it's a field of remembrance · you are the source*
